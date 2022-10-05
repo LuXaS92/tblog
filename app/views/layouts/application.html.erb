@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="p-4 mb-4 bg-info text-white text-center">
+      <%= link_to root_path, class: 'text-white' do %>
+        <h1 class="display4">Blog do TJ</h1>
+      <% end %>
+
+      <p class="lead">
+       Olá, aqui você encontrará artigos sobre programação, tecnologia e carreira
+      </p>
+    </div>
+    <div class="conteiner">
+      <%= yield %>
+    </div>
+    <footer class="p-4 mt-5 bg-info text-white text-center">
+      Copyrighit © TJ <%= Date.current.year %>
+    </footer>
   </body>
 </html>

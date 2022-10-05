@@ -10,6 +10,7 @@ gem 'rails', '~> 6.1.7'
 gem 'rails-i18n'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
+gem 'erb_lint'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
